@@ -38,14 +38,13 @@ a{
   color:white;
 }
 
-#header{
-  display: flex; 
-  align-items: center;
+header{
+  
   background:#1da1f2;
-  height: 60px;
-  padding: 0 23px;
-  justify-content: space-between;
-  width: 100%;
+  
+  
+  
+  
 }
 
 #menu{
