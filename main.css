@@ -5,9 +5,6 @@ body,ul{
   input{
     border:0;
   }
-  body{
-    background-image: url('https://s1.1zoom.me/b4335/478/Canada_Parks_Mountains_Lake_Forests_Scenery_514472_1920x1080.jpg');
-  }
   html{
     overflow-x: hidden;
   }
@@ -15,6 +12,12 @@ body,ul{
     font-family: sans-serif;
     text-decoration: none;
     color:white;
+  }
+  
+  .wall img{
+    background-image:cover;
+    background-repeat: no-repeat;
+  
   }
   
   #logo{
