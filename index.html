@@ -1,36 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-       <link rel="stylesheet" href="main.css">
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
-  </head>
-  <body>
-    <div class="geral">
-    <header id="header">
-    <a id="logo" href="">Twitter</a>
-  <nav id="nav">
-    <button id="btn-mobile">
-      <span id="hamburguer"></span>
-    </button>
-    <ul id="menu">
-      <li><a href="#">Início</a></li>
-      <li><a href="">Categorias</a></li>
-      <li><a href="">Contato</a></li>
-      <li><a href="">Sobre</a></li>
-    </ul>
-  </nav>
-  <div class="clear"></div><!--clear-->
-</div><!--geral-->
-</header>
-<div class="wall"><img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/29955_829E9E4D6E4D30C7.jpeg"></div>
-   <div class="fundo geral"></div>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="JavaScript.js"></script>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Twitter</title>
+</head>
+<body>
+
+    <section>
+        <header>
+            <div class="geral">
+            <nav class="desktop">  
+                <div class="btnlog right"><i class="far fa-user-circle"></i></div>
+                <input class="box right" type="search" class="text" placeholder="Pesquisar">
+                <div class="lupa right"><i class="fas fa-search"></i></div>
+                <ul class="menu right">
+                    <li><a href="">Home</li></a>
+                    <li><a href="">Sobre</li></a>
+                    <li><a href="">Blog</li></a>
+                    <li><a href="">Galeria</li></a>
+                    <li><a href="">Premium</li></a>
+                </ul> 
+                <div class="login right">
+                    <input type="submit" value="Login">
+                </div> 
+                <div class="logo"><a href="http://127.0.0.1:5500/index.html"><img src="logow.png"></a></div> 
+            </nav><!--Desktop-->
+            <div class="botao-moba right"><i class="fas fa-bars"></i></div>
+            <nav class="mobile">  
+                <ul class="itens">
+                    <li><a href="">Home</li></a>
+                    <li><a href="">Sobre</li></a>
+                    <li><a href="">Blog</li></a>
+                    <li><a href="">Galeria</li></a>
+                    <li><a href="">Premium</li></a>
+                </ul> 
+            </nav><!--Mobile-->
+            <div class="clear"></div>
+            </div><!--geral-->  
+        </header>
+    </section><!--menu-->
+    <section class="background">
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/29955_829E9E4D6E4D30C7.jpeg">
+    </section>
+    <div class="fundo geral"></div>
     <section class="boxlog geral">
-        <div class="logolog"><img src=""></div>
-        <div class="logologo"><img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png"></div>
+        <div class="logolog"><img src="logo.png"></div>
+        <div class="logologo"><img src="logow.png"></div>
         <div class="user">
             <div class="email"><input type="email" name="email" placeholder="E-mail"></div>
             <div class="senha"><input type="password" name="password" placeholder="Senha"></div>
-            <label class="container"><span class="forg">Lembrar-me</span>
+            <label class="container"><span>Lembrar-me</span>
                 <input type="checkbox">
                 <span class="check"></span>
             </label>
@@ -39,16 +65,44 @@
             <div class="under"></div>
             <div class="new"><input type="submit" value="Cadastrar-se"></div>
             <div class="clear"></div>
-      </div>
+        </div>
     </section>
-    <footer>
-      <p>© Copyright 1998-2022 Twitter Comunicação e Participações S.A</p>
+    <section class="especialidades">
+        <div class="geral">
+       <h2 class="tittle">Minhas Especialidades</h2>
+
+            <div class="w33 left box-especialidades">
+               <h3><i class="fab fa-css3"></i></h3>
+               <h4>CSS3</h4>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                      elit. Doloremque fugiat consectetur provident. Tempora minima 
+                      repudiandae unde! Quidem consequuntur harum vel reiciendis incidunt.
+                      Lorem ipsum dolor.   
+                   </p>
+            </div><!--box-especialidades-->
+            <div class="w33 left box-especialidades">
+               <h3><i class="fab fa-html5"></i></h3>
+               <h4>HTML5</h4>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                       elit. Doloremque fugiat consectetur provident. Tempora minima 
+                       repudiandae unde! Quidem consequuntur harum vel reiciendis incidunt.
+                       Lorem ipsum dolor.  
+                   </p>
+            </div><!--box-especialidades-->
+            <div class="w33 left box-especialidades">
+               <h3><i class="fab fa-js"></i></h3>
+               <h4>JavaScript</h4>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
+                      elit. Doloremque fugiat consectetur provident. Tempora minima 
+                      repudiandae unde! Quidem consequuntur harum vel reiciendis incidunt.
+                      Lorem ipsum dolor.  
+                   </p>
+            </div><!--box-especialidades-->
+        </div><!--geral-->     
+        <div class="clear"></div>           
+</section><!--especialidades-->
+    <footer class="fixed">
+        <p>© Copyright 1998-2022 Twitter Comunicação e Participações S.A</p>
     </footer>
-    <script>var btnMobile = document.getElementById('btn-mobile');
-      btnMobile.addEventListener('click', drop);
-  function drop(){
-  var nav = document.getElementById('nav');
-  nav.classList.toggle('Ativado');
-  }</script>
-  </body>
+</body>
 </html>
