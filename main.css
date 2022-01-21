@@ -24,8 +24,10 @@ body,ul{
   }
   
   .wall img{
-    background-image:cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    height:680px;
+    background-size: cover; 
+    position: relative; 
   
   }
   
