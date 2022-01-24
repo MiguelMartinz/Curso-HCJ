@@ -107,9 +107,12 @@ nav.desktop li a:hover{
   border: 1px solid #1da0f269;
   backdrop-filter: blur(3px);
   border-radius:20px;
+  
+  
 }
 
 section.boxlog{
+  width:89%;
   top:52%;
   left:50%;
   transform:translate(-50%,-48%);
@@ -297,7 +300,7 @@ section.boxlog{
 
 
 footer{
-  position:fixed;
+  
   background: #1da1f2;
   color:white;
   text-align: center;
