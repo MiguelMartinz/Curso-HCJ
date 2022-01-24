@@ -13,7 +13,7 @@ html,body{
     height:100%;
 }
 
-input{width: 100%;
+input{
     border:0; 
 }
 
@@ -59,8 +59,8 @@ header{
     background:#1da1f2;
 }
 .wall img{
-  width: 100%;
-  height:680px;
+  
+  
   background-size: cover; 
   position: relative; 
 }
