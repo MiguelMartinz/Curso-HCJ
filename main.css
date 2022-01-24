@@ -63,17 +63,6 @@ header{
   position: relative; 
 }
 
-.menu{
-  display:flex;
-  gap:.5rem;
-  list-style: none;
-}
-
-.menu a{
-  display: block;
-  padding:1.3rem;
-  margin-right:-8px;
-}
 
 .logo p{
     padding-top:15px;
@@ -328,7 +317,7 @@ footer{
         max-width: 500px;
     }
     .menu{
-      
+      display:block;
       position: absolute;
       width: 100%;
       top:60px;
@@ -338,33 +327,39 @@ footer{
       transition: .6s;
       height: 0px;
       visibility: hidden;
-      overflow-y: hidden;
-  
+      overflow-x: hidden;
+      text-align: center;
     }
+
+    nav.desktop li{
+      display: inline-block;
+      width: 100%;
+    }
+
+    .menu a{
+      padding: .8rem 0;
+      font-family: sans-serif;
+      font-size: 19px;
+      border-bottom: 1px solid rgba(0, 0, 0, .08);
+      color:white;
+     
+    }
+
+    .menu a:hover{
+      background:white;
+      color:#1da1f2;
+      border-top-right-radius:80px;
+      border-bottom-right-radius:80px;
+    
+    }
+
     #resp.Ativado .menu{
       height: calc(100vh - 60px);
       visibility: visible;
       overflow-y: auto;  
       z-index:10000;
-     width:100%;
     }
-  
-    .menu a{
-    padding: .8rem 0;
-    font-family: sans-serif;
-    font-size: 19px;
-    margin:0 1.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, .08);
-    color:white;
-  }
-  
-  .menu a:hover{
-    background:white;
-    color:#1da1f2;
-    border-top-right-radius:40px;
-    border-bottom-right-radius:40px;
-  
-  }
+
    #btn-mobile{
       display:flex;
       padding:.5rem 1rem;
