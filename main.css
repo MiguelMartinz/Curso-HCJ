@@ -328,7 +328,7 @@ footer{
         max-width: 500px;
     }
     .menu{
-      display:;
+      
       position: absolute;
       width: 100%;
       top:60px;
@@ -346,6 +346,7 @@ footer{
       visibility: visible;
       overflow-y: auto;  
       z-index:10000;
+     width:100%;
     }
   
     .menu a{
