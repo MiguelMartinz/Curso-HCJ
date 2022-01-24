@@ -51,7 +51,7 @@ img{
 
 /* STYLE */
 
-.btn-mobile{
+#btn-mobile{
     display:none;
 }
 header{
@@ -59,10 +59,20 @@ header{
     background:#1da1f2;
 }
 .wall img{
-  
-  
   background-size: cover; 
   position: relative; 
+}
+
+.menu{
+  display:flex;
+  gap:.5rem;
+  list-style: none;
+}
+
+.menu a{
+  display: block;
+  padding:1.3rem;
+  margin-right:-8px;
 }
 
 .logo p{
@@ -117,6 +127,7 @@ section.boxlog{
   -ms-transform:translate(-50%,-43%);
   display:inline-block;
   position:absolute;
+  z-index:1002;
 }
 
 .logolog{
@@ -296,20 +307,19 @@ section.boxlog{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer{
+  position:fixed;
+  background: #1da1f2;
+  color:white;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size:16px;
+  bottom:0;
+  width: 100%;
   
+ 
+}
+
   @media screen and (max-width:850px){
     img{
         float:none !important;
@@ -318,12 +328,12 @@ section.boxlog{
         max-width: 500px;
     }
     .menu{
-      display:block;
+      display:;
       position: absolute;
       width: 100%;
       top:60px;
       right:0px;
-      background:.1da1f2;
+      background:#1da1f2;
       z-index:1000;
       transition: .6s;
       height: 0px;
@@ -331,10 +341,11 @@ section.boxlog{
       overflow-y: hidden;
   
     }
-    .nav.Ativado .menu{
+    #resp.Ativado .menu{
       height: calc(100vh - 60px);
       visibility: visible;
       overflow-y: auto;  
+      z-index:10000;
     }
   
     .menu a{
@@ -348,12 +359,12 @@ section.boxlog{
   
   .menu a:hover{
     background:white;
-    color:.1da1f2;
+    color:#1da1f2;
     border-top-right-radius:40px;
     border-bottom-right-radius:40px;
   
   }
-   .btn-mobile{
+   #btn-mobile{
       display:flex;
       padding:.5rem 1rem;
       font-size: 1rem;
@@ -383,13 +394,13 @@ section.boxlog{
       right: 7px;
     }
   
-    .nav.Ativado .hamburguer{
+  #resp.Ativado .hamburguer{
       border-top-color:transparent;
     }
-    .nav.Ativado .hamburguer:before{
+    #resp.Ativado .hamburguer:before{
       transform:rotate(135deg);
     }
-    .nav.Ativado .hamburguer:after{
+    #resp.Ativado .hamburguer:after{
       transform:rotate(-135deg);
       top:-8px;
     }

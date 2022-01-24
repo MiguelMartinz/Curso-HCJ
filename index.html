@@ -9,8 +9,9 @@
     <header>
         <div class="geral">
     <a class="logo" href=""><p>Twitter</p></a>
+  <section id="resp">
   <nav class="desktop right">
-    <button class="btn-mobile">
+    <button id="btn-mobile">
       <span class="hamburguer"></span>
     </button>
     <ul class="menu">
@@ -20,12 +21,17 @@
       <li><a href="">Sobre</a></li>
     </ul>
   </nav>
+</section>
   <div class="clear"></div><!--clear-->
 </div><!--geral-->
 </header>
-<div class="wall"><img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/29955_829E9E4D6E4D30C7.jpeg"></div>
-   <div class="fundo geral"></div>
-    <section class="boxlog geral">
+
+<section>
+   <div class="wall"><img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/29955_829E9E4D6E4D30C7.jpeg"></div>
+   </section><!--BACKGROUND-->
+
+   <section class="boxlog">]
+    <div class="fundo"></div> 
         <div class="logolog"><img src=""></div>
         <div class="logologo"><img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png"></div>
         <div class="user">
@@ -39,16 +45,19 @@
             <a href="">Esqueceu a senha?</a>
             <div class="under"></div>
             <div class="new"><input type="submit" value="Cadastrar-se"></div>
+          </div><!--geral-->
             <div class="clear"></div>
       </div>
     </section>
     <footer>
       <p>© Copyright 1998-2022 Twitter Comunicação e Participações S.A</p>
     </footer>
-    <script>var btnMobile = document.getElementByClass('btn-mobile');
+    <script>
+    var btnMobile = document.getElementById('btn-mobile');
       btnMobile.addEventListener('click', drop);
-  function drop(){
-  var nav = document.getElementByClass('nav');
+
+    function drop(){
+    var nav = document.getElementById('resp');
   nav.classList.toggle('Ativado');
   }</script>
   </body>
